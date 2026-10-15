@@ -5,6 +5,8 @@ import { buildConfig } from 'payload';
 
 import { Posts } from './src/collections/Posts';
 import { Users } from './src/collections/Users';
+import { LandingPage } from './src/globals/LandingPage';
+import { seedLandingPage } from './src/seed';
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -23,5 +25,8 @@ export default buildConfig({
       connectionString: process.env.DATABASE_URL ?? '',
     },
   }),
-  globals: [],
+  globals: [LandingPage],
+  onInit: async (payload) => {
+    await seedLandingPage(payload);
+  },
 });
