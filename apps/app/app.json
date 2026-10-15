@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Dummy App",
+    "slug": "dummy-app",
+    "scheme": "dummyapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android", "web"],
+    "plugins": ["expo-router"],
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

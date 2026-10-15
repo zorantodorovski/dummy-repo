@@ -1,0 +1,7 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "moduleSuffixes": [".web", ".native", ""]
+  }
+}
