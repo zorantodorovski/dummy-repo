@@ -1,0 +1,13 @@
+.git
+.turbo
+.expo
+.next
+node_modules
+**/node_modules
+**/.next
+**/dist
+**/web-build
+**/*.tsbuildinfo
+.env
+.env.*
+!.env.example
